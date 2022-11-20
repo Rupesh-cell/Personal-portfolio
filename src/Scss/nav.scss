@@ -1,0 +1,29 @@
+.container-link {
+  background-color: black;
+  margin-bottom: 0;
+  .link-contents {
+    width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .nav-logo {
+      width: 175px;
+    }
+    .Link {
+      display: flex;
+      justify-content: space-between;
+      width: 600.5px;
+      padding-top: 17px;
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 26px;
+      }
+    }
+  }
+}
+.container{
+    background-color:black;
+}
