@@ -5,10 +5,21 @@
     width: 1140px;
     margin: auto;
     margin-top: 120px;
+    .col {
+      display: flex;
+      justify-self: space-between;
+      width: 1140px;
+      gap: 30%;
+      .profile-pic {
+        width: 300px;
+        height: 300px;
+        border-radius: 142px;
+      }
+    }
     h1 {
       font-style: normal;
-      font-weight: 500;
-      font-size: 32px;
+      font-weight: 600;
+      font-size: 38px;
       margin-bottom: 0px;
       color: white;
     }
@@ -45,6 +56,40 @@
 
         margin-top: 57px;
       }
+    }
+  }
+  .green-box {
+    display: flex;
+
+    gap: 8px;
+    .green {
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      background: green;
+      margin-top: 6px;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 12px;
+      margin-top: 0px;
+    }
+  }
+  .time-content {
+    margin-top: 100px;
+    padding-bottom:37px;
+    padding-left: 30px;
+    h1 {
+      font-weight: 300;
+      font-size: 18px;
+      margin-top: 0px;
+      margin-bottom: -7px;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 36px;
+      margin: 0px;
     }
   }
 }

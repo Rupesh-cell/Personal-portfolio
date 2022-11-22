@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import "../Scss/profile.scss";
 import { Link } from "react-router-dom";
+import Pic from "../Assets/rup.jpg"
 
 const Profile = () => {
   return (
@@ -16,6 +17,18 @@ const Profile = () => {
                 <div className="button-section">
                   <Button>Book A Meeting</Button>
                   <Link to="/cv">Watch my CV</Link>
+                </div>
+              </div>
+            </Row>
+            <Row>
+              <img className="profile-pic" src={Pic} alt="" />
+              <div className="time-content">
+                <h1>Current Location:</h1>
+                <h2>Pune "9:09PM"</h2>
+                <div className="green-box">
+                  <div className="green"></div>
+                  <h1>At office now</h1>
+
                 </div>
               </div>
             </Row>
