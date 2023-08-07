@@ -1,19 +1,16 @@
 .container-link {
   background-color: black;
   margin-bottom: 0;
+
  
-  .link-contents {
-    width: 1120px;
+  .link-content {
+    
     margin: auto;
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    .nav-logo {
-      width: 175px;
-    }
     .Link {
-      display: flex;
+      display: grid;
       justify-content: space-between;
-      width: 600.5px;
       padding-top: 17px;
       
       a {
@@ -24,7 +21,4 @@
       }
     }
   }
-}
-.container{
-    background-color:black;
 }

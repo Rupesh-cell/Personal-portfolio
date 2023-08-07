@@ -1,10 +1,18 @@
-import React from "react";
-
+import React,{useState} from "react";
 import Logo from "../Assets/Logo.svg";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import "../Scss/nav.scss";
+import CoolNav from "./CoolNav";
 
 const Bar = () => {
+  const [showComponent, setShowComponent] = useState(false);
+
+  const handleButtonClick = () => {
+   
+    setShowComponent(!showComponent);
+  };
+  
   return (
     <>
       <div className="container-link">
@@ -15,7 +23,8 @@ const Bar = () => {
             </Link>
           </div>
           <div className="Link">
-            <Link to="/">Menu+</Link>
+            <Button onClick={handleButtonClick}>{showComponent}</Button>
+            {showComponent && <CoolNav />}
           </div>
         </div>
       </div>

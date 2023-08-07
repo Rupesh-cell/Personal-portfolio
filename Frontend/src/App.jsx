@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Works from './Pages/Works';
 import Contact from './Pages/Contact';
+import CoolNav from './Components/CoolNav';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       <Route exact path="/home" element={<Home />} />
       <Route exact path="/works" element={<Works />} />
       <Route exact path="/contact" element={<Contact />} />
-      <Route exact path="/about" element={<About />} />
+      <Route exact path="/about" element={<About/>} />
+      {/* <Route exact path="/nav" element={<CoolNav/>} /> */}
+
       </Routes>
     </Router>
     </>
