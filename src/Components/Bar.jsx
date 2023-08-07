@@ -15,10 +15,7 @@ const Bar = () => {
             </Link>
           </div>
           <div className="Link">
-            <Link to="/home">Home</Link>
-            <Link to="/works">Works</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/about">About</Link>
+            <Link to="/">Menu+</Link>
           </div>
         </div>
       </div>
