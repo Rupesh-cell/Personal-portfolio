@@ -2,12 +2,14 @@
   background-color: black;
   margin-bottom: 0;
 
+
  
   .link-content {
     
     margin: auto;
     display: grid;
     justify-content: space-between;
+    position: absolute;
     .Link {
       display: grid;
       justify-content: space-between;
