@@ -7,10 +7,11 @@ import Pic from "../Assets/rup.jpg"
 const Profile = () => {
   return (
     <>
-      <div className="main-container">
+      
         <div className="profile-contents">
-          <Col>
-            <Row>
+          <Row>
+          <div className="rows">
+            <Col>
               <div className="profile-discription">
                 <h1>I create faces for digital products</h1>
                 <h2>by changing your dreams into reality .. </h2>
@@ -19,8 +20,8 @@ const Profile = () => {
                   <Link to="/cv">Watch my CV</Link>
                 </div>
               </div>
-            </Row>
-            <Row>
+            </Col>
+            <Col>
               <img className="profile-pic" src={Pic} alt="" />
               <div className="time-content">
                 <h1>Current Location:</h1>
@@ -31,10 +32,11 @@ const Profile = () => {
 
                 </div>
               </div>
-            </Row>
-          </Col>
+            </Col>
+            </div>
+          </Row>
         </div>
-      </div>
+     
     </>
   );
 };
