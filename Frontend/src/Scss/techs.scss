@@ -1,29 +1,60 @@
-/* Add your global styles here */
-
-.circular-tech-skills {
-    margin: 20px;
+/* App.css */
+.App {
     text-align: center;
+    font-family: Arial, sans-serif;
   }
   
-  .progress-circles {
+  .frontend-portfolio {
+    padding: 20px;
+  }
+  
+  .technology-progress {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
   }
   
-  .progress-circle {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
+  .technology-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
   }
   
-  .background-circle {
-    fill: none;
-    stroke: #f0f0f0; /* Unfilled color */
-    stroke-width: 10;
+  .technology-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   
-  .label {
-    margin-top: 10px;
+  .progress-bar {
+    flex: 1;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .technology-progress {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .technology-logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
   

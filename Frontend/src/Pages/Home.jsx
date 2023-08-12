@@ -4,7 +4,7 @@ import Profile from "../Components/Profile";
 import Cards from "../Components/Cards";
 import "../Scss/nav.scss";
 import Footer from "../Components/Footer";
-import TechSkills from "../Components/Techs";
+import FrontendPortfolio from "../Components/Techs";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Bar />
       <Profile />
       <Cards />
-      <TechSkills/>
+      <FrontendPortfolio/>
       <Footer />
     </>
   );
