@@ -1,26 +1,27 @@
-.container {
-  background: black;
 
   .profile-contents {
- 
+    background-color: #000000;
     width: 100%;
     margin: auto;
-    margin-top: 120px;
+    padding-top: 160px;
     .rows {
-    
       display: flex;
+      justify-self: space-between;
+      width: 100%;
+      
+     .col2{
+      display: grid;
       margin: auto;
       width: 100%;
-      justify-self: space-between;
-      gap: 80px;
-     .col{
      
      }
 
       .profile-pic {
-        max-width: 100px;
+        max-width: 400px;
         height: auto;
+        width: 100%;
         border-radius: 142px;
+        margin:auto;
       }
     }
     h1 {
@@ -85,9 +86,10 @@
     }
   }
   .time-content {
-    margin-top: 100px;
+    padding-top: 9%;
     padding-bottom: 37px;
     padding-left: 30px;
+    margin:auto;
     h1 {
       font-weight: 300;
       font-size: 18px;
@@ -100,4 +102,14 @@
       margin: 0px;
     }
   }
+
+@media (max-width: 768px) {
+  .rows{
+    display: grid !important;
+    gap:20px;
+  }
+  
+
 }
+
+    
