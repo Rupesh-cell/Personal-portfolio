@@ -2,16 +2,16 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ContactSchema = new Schema({
-  Name: {
+  name: {
     type: String,
     maxLength: 50,
     required: true,
   },
-  Email: {
+  email: {
     type: String,
     maxLength: 50,
   },
-  Message: {
+  message: {
     type: String,
     maxLength: 300,
   }

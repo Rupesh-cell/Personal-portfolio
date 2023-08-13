@@ -20,6 +20,10 @@ const ProjectSchema = new Schema({
     type: String,
     maxLength: 200,
   },
+  image: {
+    type: String,
+    maxLength:200,
+  }
 },{
 	timestamps:true
 });
