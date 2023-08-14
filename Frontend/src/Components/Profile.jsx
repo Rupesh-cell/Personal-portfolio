@@ -3,6 +3,7 @@ import { Row, Col, Button, Container } from "react-bootstrap";
 import "../Scss/profile.scss";
 import { Link } from "react-router-dom";
 import Pic from "../Assets/rup.jpg";
+import CurrentTime from "./Time";
 
 const Profile = () => {
   return (
@@ -25,12 +26,8 @@ const Profile = () => {
               <Col className="col2">
                 <img className="profile-pic" src={Pic} alt="" />
                 <div className="time-content">
-                  <h1>Current Location:</h1>
-                  <h2>Pune "9:09PM"</h2>
-                  <div className="green-box">
-                    <div className="green"></div>
-                    <h1>At office now</h1>
-                  </div>
+                  <CurrentTime/>
+                  
                 </div>
               </Col>
             </div>

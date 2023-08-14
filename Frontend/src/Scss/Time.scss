@@ -1,0 +1,30 @@
+.green-box {
+  display: flex;
+
+  gap: 8px;
+  .green {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: green;
+    margin-top: 6px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: -7px;
+}
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0px;
+}
