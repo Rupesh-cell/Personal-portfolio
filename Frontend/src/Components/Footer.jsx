@@ -3,26 +3,28 @@ import "../Scss/footer.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Link } from "react-router-dom";
+import Logo from "../Assets/Logo.svg";
 const Footer = () => {
   return (
     <>
       <div className="footer-container">
         <div className="footer-contents">
           <div className="footer-logo">
-            <h1>OnlineStore</h1>
+          <Link to="/home">
+              <img src={Logo} alt="" />
+            </Link>
           </div>
           <div className="footer-links">
             <p>Quick Links</p>
             <div className="Quick-links">
-              <a href="/">Product</a>
-              <a href="terms">How does it work? </a>
-              <a href="mailto:someone@example.com">Support</a>
-              <a href="mailto:someone@example.com">Report an issue</a>
-              <a href="mailto:someone@example.com">Wishlist</a>
+              <a href="/">Home</a>
+              <a href="khadkarupesh818@gmail.com">Support</a>
+              <a href="khadkarupesh818@gmail.com">Report an issue</a>
             </div>
           </div>
           <div className="footer-sites">
-            <p>Find us on</p>
+            <p>Find me on</p>
             <div className="social-media">
               <a href="#" target="_blank">
                 <FacebookIcon />

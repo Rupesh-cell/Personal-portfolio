@@ -6,6 +6,7 @@ import Works from "./Pages/Works";
 import Contact from "./Pages/Contact";
 
 
+
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path="/works" element={<Works />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about" element={<About />} />
+          
         </Routes>
       </Router>
     

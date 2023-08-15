@@ -1,0 +1,29 @@
+/* Add your global styles here */
+
+.circular-tech-skills {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .progress-circles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .progress-circle {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .background-circle {
+    fill: none;
+    stroke: #f0f0f0; /* Unfilled color */
+    stroke-width: 10;
+  }
+  
+  .label {
+    margin-top: 10px;
+  }
+  
