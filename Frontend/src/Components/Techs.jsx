@@ -1,46 +1,40 @@
 import React from 'react';
 import '../Scss/techs.scss';
 
-const TechSkills = () => {
-  const skills = [
-    { name: 'HTML', progress: 90 },
-    { name: 'CSS', progress: 85 },
-    { name: 'JavaScript', progress: 80 },
-    { name: 'React.js', progress: 75 },
-    // Add more skills with their progress values
-  ];
-  const radius = 50; // Adjust the radius of the circular progress bar
-
+const TechnologyProgressBar = ({ technology, progress, logoUrl }) => {
   return (
-    <div className="circular-tech-skills">
-      <h2>Tech Skills</h2>
-      <div className="progress-circles">
-        {skills.map((skill, index) => (
-          <div className="progress-circle" key={index}>
-            <svg width={radius * 2} height={radius * 2}>
-              <circle
-                className="background-circle"
-                cx={radius}
-                cy={radius}
-                r={radius - 5}
-              />
-              <circle
-                className="progress-circle"
-                cx={radius}
-                cy={radius}
-                r={radius - 5}
-                stroke="#007bff" // Filled color
-                strokeWidth="10"
-                strokeDasharray={`${(skill.progress / 100) * 2 * Math.PI * (radius - 5)}, ${2 * Math.PI * (radius - 5)}`}
-                fill="transparent"
-              />
-            </svg>
-            <div className="label">{skill.name}</div>
-          </div>
-        ))}
+    <div className="technology-progress">
+      <div className="technology-logo">
+        <img src={logoUrl} alt={`${technology} Logo`} />
+      </div>
+      <div className="progress-bar">
+        <div className="progress" style={{ width: `${progress}%` }} />
       </div>
     </div>
   );
 };
 
-export default TechSkills;
+const FrontendPortfolio = () => {
+  const technologies = [
+    { name: 'HTML', progress: 90, logoUrl: 'html-logo.png' },
+    { name: 'CSS', progress: 85, logoUrl: 'css-logo.png' },
+    { name: 'JavaScript', progress: 80, logoUrl: 'javascript-logo.png' },
+    // Add more technologies and progress values here
+  ];
+
+  return (
+    <div className="frontend-portfolio">
+      <h2>Frontend Technologies</h2>
+      {technologies.map((tech, index) => (
+        <TechnologyProgressBar
+          key={index}
+          technology={tech.name}
+          progress={tech.progress}
+          logoUrl={tech.logoUrl}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default FrontendPortfolio;
