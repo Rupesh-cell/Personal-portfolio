@@ -1,8 +1,10 @@
 import React from 'react';
 import '../Scss/techs.scss';
+import { Container } from 'react-bootstrap';
 
-const TechnologyProgressBar = ({ technology, progress, logoUrl }) => {
+const TechnologyProgressBar = () => {
   return (
+    <Container>
     <div className="technology-progress">
       <div className="technology-logo">
         <img src={logoUrl} alt={`${technology} Logo`} />
@@ -11,6 +13,7 @@ const TechnologyProgressBar = ({ technology, progress, logoUrl }) => {
         <div className="progress" style={{ width: `${progress}%` }} />
       </div>
     </div>
+    </Container>
   );
 };
 
