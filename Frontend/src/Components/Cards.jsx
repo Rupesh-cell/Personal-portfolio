@@ -1,22 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Scss/cards.scss";
 import axios from "axios";
 import { Container, Row, Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 const Cards = () => {
   const [projects, setProjects] = useState([]);
 
-  const options = { method: "GET", url: "http://localhost:5000/api/projects" };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/api/projects");
+        setProjects(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
-  axios
-    .request(options)
-    .then(function (response) {
-      setProjects(response.data);
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
-
+    fetchData();
+  }, []);
   return (
     <>
       <div className="cards-container">
