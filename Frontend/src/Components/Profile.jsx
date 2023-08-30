@@ -8,7 +8,8 @@ import CurrentTime from "./Time";
 const Profile = () => {
   return (
     <>
-      <div className="profile-contents">
+      
+        <div className="profile-contents">
         <Container>
           <Row>
             <div className="rows">
@@ -25,13 +26,15 @@ const Profile = () => {
               <Col className="col2">
                 <img className="profile-pic" src={Pic} alt="" />
                 <div className="time-content">
-                  <CurrentTime />
+                  <CurrentTime/>
+                  
                 </div>
               </Col>
             </div>
           </Row>
-        </Container>
-      </div>
+          </Container>
+        </div>
+      
     </>
   );
 };

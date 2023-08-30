@@ -8,7 +8,11 @@ const TechnologyProgressBar = ({ technology, progress, logoUrl }) => {
     <Container>
       <div className="technology-progress">
         <div className="technology-logo">
-          <img src={logoUrl} alt={`${technology} Logo`} />
+          <div className="tech-d">
+      
+            <img src={logoUrl} alt={`${technology} Logo`} />
+            <p>{technology}</p>
+          </div>
         </div>
         <div className="progress-bar">
           <div className="progress" style={{ width: `${progress}%` }} />
@@ -26,7 +30,7 @@ const FrontendPortfolio = () => {
       try {
         const response = await axios.get("http://localhost:5000/api/techs");
         setTechnologies(response.data);
-        console.log(response.data);
+        console.log(setTechnologies);
       } catch (error) {
         console.error(error);
       }
@@ -42,9 +46,9 @@ const FrontendPortfolio = () => {
         {technologies.map((tech, index) => (
           <TechnologyProgressBar
             key={index}
-            technology={tech.name}
+            technology={tech.title}
             progress={tech.progress}
-            logoUrl={tech.logoUrl}
+            logoUrl={tech.image}
           />
         ))}
       </div>

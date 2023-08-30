@@ -25,7 +25,7 @@ const Cards = () => {
         <Container>
           <div className="cards-items">
             <h1>Projects</h1>
-            <Row xs={1} md={3} lg={4} className="g-2">
+            <Row xs={1} md={2} lg={4} className="g-2">
               {projects?.map((items, index) => (
                 <Col>
                   <Link to="">
